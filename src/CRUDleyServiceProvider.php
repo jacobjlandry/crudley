@@ -16,7 +16,7 @@ class CRUDleyServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/view/CRUDTemplates' => resource_path('views/CRUDTemplates'),
-            __DIR__.'/storage/history.php' => Storage::disk('local')->path('/') . 'history.php'
+            __DIR__.'/storage/history.php' => Storage::disk('local')->path('/') . 'crud/history.php'
         ]);
     }
 
