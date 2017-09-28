@@ -1,7 +1,6 @@
 {
     "name": "jacoblandry/crudley",
     "description": "Command line tool for creating Laravel CRUD resources",
-    "version": "0.0.5",
     "authors": [
         {
             "name": "Jacob Landry",
