@@ -10,7 +10,12 @@ necessary in a production environment).
 composer require --dev jacoblandry/crudley
 ```
 
-Next you need to register the command in your app/Console/Kernal.php file
+Next you need to run vendor:publish to publish the file that tracks the history of your CRUD creations (for rollback) as well as the view template
+```php
+php artisan vendor:publish
+```
+
+Last you need to register the command in your app/Console/Kernal.php file
 ```php
 protected $commands = [
     \JacobLandry\CRUDley\Commands\CRUDley::class
@@ -25,6 +30,8 @@ As a reminder, you can always view the documentation via artisan
 ```bash
 php artisan help make:crud
 ```
+
+*Note: You can edit the template that is used to copy these resources in thew views/CRUDTemplates directory*
 
 ### Simple Usage Example
 In its simplest form, you can simply call make:crud and receive an MVC setup for a resource.
