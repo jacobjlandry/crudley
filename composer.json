@@ -1,0 +1,27 @@
+{
+    "name": "jacoblandry/crudley",
+    "description": "Command line tool for creating Laravel CRUD resources",
+    "version": "0.0.5",
+    "authors": [
+        {
+            "name": "Jacob Landry",
+            "email": "landry.jacob@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/framework": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "JacobLandry\\CRUDley\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JacobLandry\\CRUDley\\CRUDleyServiceProvider"
+            ]
+        }
+    }
+}
